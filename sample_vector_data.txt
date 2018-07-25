@@ -1,0 +1,123 @@
+
+% ----- positions of various types
+% ----- all equate to the same map
+vecteur_positions_type_1=[  -30;10;   -10;20;   10;0;
+							  0;-10;   20;-10;  40;10  ];
+
+vecteur_positions_type_2=[  -30;10;   20;10;	20;-20;
+							-10;-10;  20;0;		20;20  ];
+				  
+vecteur_positions_type_3=[   
+                    33;     288;
+                    22;     63;
+                    29;     134;
+                    15;     228;
+                    20;     90;
+                    29;     43     ]; 
+vecteur_positions_type_4=[   
+                    33;     5.02655;
+                    22;     1.09956;
+                    29;     2.33874;
+                    15;     3.97935;
+                    20;     1.5708;
+                    29;     0.75049     ];
+vecteur_positions_type_5=[   
+                    33;     287;
+                    22;     135;
+                    29;     74;
+                    15;     90;
+                    20;     225;
+                    29;     315     ]; 
+vecteur_positions_type_6=[   
+                    33;     5.00909;
+                    22;     2.35619;
+                    79;     1.29154;
+                    15;     1.57080;
+                    20;     3.92699;
+                    29;     5.49779     ];      
+% -----
+
+% vecteur position types (can be mixed) :
+% 0 = ignore position (skip whole vecteur)
+% 1 = position is a global carteisen coordinate
+% 2 = position is a relative carteisen coordinate to the last position
+% 3 = position is a magnitude first then global angle vecteur in degrees
+% 4 = position is a magnitude first then global angle vecteur in radians
+% 5 = position is a magnitude first then relative angle vecteur in degrees
+% 6 = position is a magnitude first then relative angle vecteur in radians
+%
+% uncomment one of the below
+%
+%vecteur_positions=vecteur_positions_type_1; vecteur_positions_types=[1;1;1;1;1;1]; 
+%vecteur_positions=vecteur_positions_type_2; vecteur_positions_types=[2;2;2;2;2;2]; 
+%vecteur_positions=vecteur_positions_type_3; vecteur_positions_types=[3;3;3;3;3;3];
+%vecteur_positions=vecteur_positions_type_4; vecteur_positions_types=[4;4;4;4;4;4];
+%vecteur_positions=vecteur_positions_type_5; vecteur_positions_types=[5;5;5;5;5;5]; 
+vecteur_positions=vecteur_positions_type_6; vecteur_positions_types=[6;6;6;6;6;6];
+
+% ----- vecteurs of various types
+% ----- all equate to the same map
+vecteurs_type_1=[   -17;25;    20;38;  -5;6;
+                      9;-36;   17;0;   58;34   ];
+
+vecteurs_type_2=[   13;15.6;     31;18;     -14;6;
+                      8;-24;     -4;10;      19;23   ];
+
+vecteurs_type_3=[   
+                    20;     40;
+                    35;     60;
+                    15;     290;
+                    25;     160;
+                    10;     340;
+                    30;     40          ];                  
+vecteurs_type_4=[   
+                    20;     0.69813;
+                    35;     1.04720;
+                    15;     5.06145;
+                    25;     2.79252;
+                    10;     5.93411;
+                    30;     0.69813     ];
+
+vecteurs_type_5=[   
+                    20;     336;
+                    35;     285;
+                    15;     65;
+                    25;     70;
+                    10;     295;
+                    30;     355	        ];                  
+                
+vecteurs_type_6=[   
+                    20;     5.86431;
+                    35;     4.97419;
+                    15;     1.13446;
+                    25;     1.22173;
+                    10;     5.14872;
+                    30;     6.19592     ];
+                
+% -----
+
+% vecteur types (can be mixed) :
+% 0 = ignore vecteur
+% 1 = vecteur is a global carteisen coordinate as position
+% 2 = vecteur is a relative careisen coordinate to the position
+% 3 = vecteur is a magnitude first then global angle in degrees
+% 4 = vecteur is a magnitude first then global angle in radians
+% 5 = vecteur is a magnitude first then relative angle in degrees
+% 6 = vecteur is a magnitude first then relative angle in radians
+%
+% uncomment one of the below
+%
+%vecteurs=vecteurs_type_1; vecteur_types=[1;1;1;1;1;1];
+%vecteurs=vecteurs_type_2; vecteur_types=[2;2;2;2;2;2];
+vecteurs=vecteurs_type_3; vecteur_types=[3;3;3;3;3;3]; 
+%vecteurs=vecteurs_type_4; vecteur_types=[4;4;4;4;4;4];
+%vecteurs=vecteurs_type_5; vecteur_types=[5;5;5;5;5;5]; 
+%vecteurs=vecteurs_type_6; vecteur_types=[6;6;6;6;6;6];
+
+% vecteur ref :
+% ''    = display nothing
+% ' '   = display character
+% '.'   = display position number from the start
+% ','   = display position number from last text
+%
+vecteur_refs=["Start"; '.'; '.'; '+'; ','; "End"];
