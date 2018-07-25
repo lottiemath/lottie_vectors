@@ -1,0 +1,7 @@
+
+This is a 'route' and 'force' display for 2 dimensional vectors over a coordinate space which though displays the data in 2D uses the Z for the force component when the display is rotated by the user.
+
+
+The data can be in a mix of forms, and is given to the program as two simple 2xn matrices. One for the position vectors, and another that can be used to display a 'force' acting on that position. Both matrices must be the same length in this version. You can display more than one force at a position by using a zero magitude on the next position vector.
+
+Both matrices can contain a mix of data in the following forms  
