@@ -1,7 +1,29 @@
 
+
 This is a 'route' and 'force' display for 2 dimensional vectors over a coordinate space which though displays the data in 2D uses the Z for the force component when the display is rotated by the user.
 
 
 The data can be in a mix of forms, and is given to the program as two simple 2xn matrices. One for the position vectors, and another that can be used to display a 'force' acting on that position. Both matrices must be the same length in this version. You can display more than one force at a position by using a zero magitude on the next position vector.
 
-Both matrices can contain a mix of data in the following forms  
+Both matrices can contain a mix of data in the following forms  :
+
+0 = ignore vector 
+1 = vector is a global carteisen coordinate as position
+2 = vector  is a relative carteisen coordinate to the position
+3 = vector  is a magnitude first then global angle in degrees
+4 = vector  is a magnitude first then global angle in radians
+5 = vector  is a magnitude first then relative angle in degrees
+6 = vector  is a magnitude first then relative angle in radians
+
+
+QUICK START
+
+Set the number of vectors with
+
+nombre_de_vecteurs = 2;
+
+
+for 2 vectors, then add the vector data for the positions
+
+vector_positions = [ 3, 45, 100,
+
